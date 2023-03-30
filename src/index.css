@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #9197fe;
+  --primary-500-color: #48537c;
+  --primary-300-color: #737bc4;
+  --secondary-color: #f6b26a;
+  --secondary-500-color: #f5ae6c;
+  --tertiary-color: #33b8b1;
+  --warning-color: #f35b83;
+  --background-color: #ffffff;
+  --mobile: 576px;
+  --tablet: 768px;
+  --desktop: 992px;
+}
