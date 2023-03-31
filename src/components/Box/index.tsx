@@ -14,6 +14,7 @@ const Box: FC<BoxProps> = ({
       [styles.boxWhite]: variant === VARIANTS.WHITE,
       [styles.boxPrimary]: variant === VARIANTS.PRIMARY,
       [styles.boxSecondary]: variant === VARIANTS.SECONDARY,
+      [styles.boxTertiary]: variant === VARIANTS.TERTIARY,
     };
 
     return Object.keys(boxClasses)

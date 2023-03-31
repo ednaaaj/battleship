@@ -7,7 +7,7 @@ import styles from "./ScoreBoard.module.css";
 const Score: FC<ScoreType> = ({ player = 1, score = 0 }) => {
   return (
     <div className={styles.scoreContainer}>
-      <span className={styles.score}>{score}</span>
+      <span className={styles.score}>{score.toString().padStart(2, "0")}</span>
       <hr className={styles.scoreDivider} />
       <span className={styles.player}>player {player}</span>
     </div>

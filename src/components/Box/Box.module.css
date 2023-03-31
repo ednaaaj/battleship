@@ -21,3 +21,7 @@
 .boxSecondary {
   background-color: var(--secondary-color);
 }
+
+.boxTertiary {
+  background-color: var(--tertiary-color);
+}

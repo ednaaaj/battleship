@@ -29,12 +29,39 @@
 }
 
 @media (min-width: 992px) {
+  /*  */
+  .root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .game {
-    padding: 10% 0 10% 0;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boardContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .game {
+    width: 90%;
+    flex-direction: column-reverse;
+    flex: 1;
+  }
 }
 
 @media (max-width: 576px) {

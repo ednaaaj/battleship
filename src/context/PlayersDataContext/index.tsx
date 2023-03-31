@@ -6,6 +6,7 @@ import {
   PlayersDataType,
 } from "./PlayersDataContext.types";
 import { data } from "../../constants/data";
+import { VARIANTS } from "../../constants/variant";
 
 const initialPlayers = {
   playersData: [
@@ -13,13 +14,13 @@ const initialPlayers = {
       id: 1,
       score: 0,
       label: 1,
-      variantBG: "secondary",
+      variantBG: VARIANTS.SECONDARY,
     },
     {
       id: 2,
       score: 0,
       label: 2,
-      variantBG: "primary",
+      variantBG: VARIANTS.TERTIARY,
     },
   ],
   ships: data.shipTypes,
@@ -43,8 +44,7 @@ const PlayersDataProvider: FC<PlayerDataContextProvided> = ({ children }) => {
         ship === "destroyer"
       ) {
         const shipData = playerData.ships[ship];
-        const curPlayer = playerData.playersData.find((p) => p.id === player);
-        if (shipData && curPlayer && curPlayer.score <= 5) {
+        if (shipData) {
           const tempData = { ...playerData };
           const playerDatapayload = tempData.playersData.map((data) => {
             if (data.id === player) {
